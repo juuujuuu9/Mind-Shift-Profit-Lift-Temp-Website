@@ -4,22 +4,81 @@
   --font-sans: "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* Mobile: original styles. All thread typography applies only at >sm (640px). */
+
 .founder-intro {
   color: #000;
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 14px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px; /* 128.571% */
+  line-height: 32px;
+}
+
+.core-belief {
+  color: #000;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.core-belief strong {
+  font-weight: 700;
 }
 
 .success-headline {
   color: #000;
   text-align: center;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 20px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 180% */
+  line-height: 48px;
+}
+
+.footer-email {
+  color: #000;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (min-width: 640px) {
+  .founder-intro {
+    font-size: 40px;
+    line-height: 48px; /* 120% */
+  }
+
+  .core-belief {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px; /* 131.25% */
+  }
+
+  .success-headline {
+    /* H3 - screens > sm */
+    font-size: 48px;
+    line-height: 72px; /* 150% */
+  }
+
+  .footer-email-icon {
+    margin-bottom: 1rem;
+  }
+
+  .footer-email {
+    color: #000;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 66.667% */
+    letter-spacing: -0.15px;
+  }
 }
